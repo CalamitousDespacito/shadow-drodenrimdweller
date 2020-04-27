@@ -1,0 +1,20 @@
+{
+  {"op" : "add",
+   "path" : "/drodenRimDwellerDeathTreasure",
+   "value" : [
+	[0, {
+      "pool" : [
+        {"weight" : 0.6, "pool" : "money"},
+        {"weight" : 0.05, "pool" : "alliancerimdwellerweapons"},
+        {"weight" : 0.05, "pool" : "alliancerimdwellerarmour"},
+        {"weight" : 0.3, "item" : "alliancemetal"}
+      ],
+      "poolRounds" : [
+        [0.20, 0],
+        [0.80, 1]
+      ],
+      "allowDuplication" : false
+    }]
+   ]
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "type" : "drodenrimdweller",
+  "baseType" : "hostile",
+
+  "dropPools" : [ "aegiRimDwellerDeathTreasure" ],
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "friendlyNpcTypes" : ["crewmemberdrodenlegion"]
+    },
+	
+    "dialog" : {
+      "attack" : {
+        "default" : {
+          "default" : [
+            "Attack!"
+          ]
+        },
+        "droden" : {
+          "default" : [
+            "Detected intruder of the Rim. Reccomended action: Exterminate.",
+            "Intruder detected. Alerting the Rim.",
+            "Enemy of the Rim detected. Destroy."
+          ],
+          "avikan" : [
+            "Avikan detected. Recommended action: Brutally murder.",
+            "Unit will not be dismantled again, false father.",
+            "Combat mode initiated."
+		  ],
+          "droden" : [
+            "Droden Legion detected. Action: Dismantle.",
+            "Intruder detected. Alerting the Rim.",
+            "Machine detected. Recommended action: Annihilate."
+		  ]
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "override" : [
+      [0, [
+          {
+            "head" : [
+			  { "name" : "droden-rimdwellerhead" }
+			],
+            "chest" : [
+			  { "name" : "droden-rimdwellerchest" }
+			],
+            "legs" : [
+			  { "name" : "droden-rimdwellerlegs" }
+			],
+            "primary" : [
+			  "thea-rimrifle1",
+			  "thea-rimsniper1",
+			  "thea-rimshotgun1-npc",
+			  "thea-rimpistol1",
+			  "thea-rimsmg1"
+            ],
+            "sheathedprimary" : [
+			  "thea-rimchainsaw-npc"
+            ]
+          }
+        ] ]
+    ]
+  },
+
+  "statusControllerSettings" : {
+    "stats" : {
+	  "xanafianStatusImmunity" : {
+		"baseValue" : 1.0
+	  },
+	  "bleedingImmunity" : {
+		"baseValue" : 1.0
+	  }
+    }
+  }
+}

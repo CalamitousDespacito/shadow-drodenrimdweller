@@ -1,0 +1,79 @@
+{
+  "type" : "crewmemberdrodenrimdweller",
+  "baseType" : "crewmemberdroden",
+
+  "scriptConfig" : {
+    "behaviorConfig" : {
+      "emptyHands" : false
+    },
+
+	"crew" : {
+	  "role" : {
+        "type" : "rimdwller",
+        "name" : "Rimdweller",
+        "field" : "Rimdweller",
+        "uniformColorIndex" : 1
+      },
+
+      "ranks" : [
+        "Redeemed <field> Unit",
+		"Forsaken <field> Unit",
+		"Rogue <field> Unit"
+      ],
+	  
+	  "defaultUniform" : {
+		"head" : "droden-rimdwllerhead",
+		"chest" : "droden-rimdwellerchest",
+		"legs" : "droden-rimdwellerlegs",
+		"back" : "thea-hiddenback"
+	  },
+	  
+	  "uniformSlots" : []
+    },
+
+    "dialog" : {
+      "crewmember" : {
+        "offer" : {
+          "droden" : {
+            "default" : [
+              "Rimdweller unit <selfname> reporting for duty.",
+              "The Rim unit <selfname> reporting in.",
+              "Aborting assassination. Requesting permission to board ship."
+            ]
+          }
+        }
+      }
+    }
+  },
+
+  "items" : {
+    "default" : [
+      [0, [
+          {
+            "head" : [ { "name" : "droden-rimdwellerhead" } ],
+			"chest" : [ { "name" : "droden-rimdwellerchest" } ],
+            "legs" : [ { "name" : "droden-rimdwellerlegs" } ],
+            "back" : [ { "name" : "thea-hiddenback" } ],
+            "primary" : [ 
+			  "thea-rimrifle1"
+			],
+            "sheathedprimary" : [
+			  "thea-rimchainsaw-npc"
+			]
+          },
+          {
+            "head" : [ { "name" : "droden-rimdwellerhead" } ],
+            "chest" : [ { "name" : "droden-rimdwellerchest" } ],
+            "legs" : [ { "name" : "droden-rimdwellerlegs" } ],
+            "back" : [ { "name" : "thea-hiddenback" } ],
+            "primary" : [ 
+			  "thea-rimsniper1"
+			],
+            "sheathedprimary" : [
+			  "thea-rimrifle1"
+			]
+          }
+        ] ]
+    ]
+  }
+}
